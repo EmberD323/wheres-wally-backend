@@ -1,13 +1,9 @@
 const { Router } = require("express");
 const indexRouter = Router();
-const userController = require("../controllers/userController");
+const characterController = require("../controllers/characterController");
 
-indexRouter.post("/signup", userController.newUserCreate);
-indexRouter.post('/login', userController.logIn);
-//logout
-indexRouter.get("/logout", (req, res, next) => {
-    //finish on front end
-    res.json("logged out")
-});
+indexRouter.get("/characters", characterController.allCharactersGet);//tested
+indexRouter.post("/character", characterController.characterCheck);//to be tested
+
 
 module.exports = indexRouter;

@@ -10,10 +10,8 @@ app.use(bodyParser.json())
 
 //routes
 const indexRouter = require("./routes/indexRouter");
-const postRouter = require("./routes/postRouter");
 
 app.use("/", indexRouter);
-app.use("/posts", postRouter);
 
 const PORT = 5000;
 app.listen(PORT, () => {
