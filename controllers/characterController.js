@@ -2,6 +2,7 @@ const db = require("../prisma/queries.js");
 
 async function allCharactersGet (req, res) {
     const coords = await db.findAllCharacters();
+    console.log(coords)
     res.json(coords);
     
 }
