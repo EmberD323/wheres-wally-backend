@@ -1,3 +1,4 @@
+deployed: https://wheres-wally-backend.onrender.com/
 # Node & Express Template
 npm install: prisma --save-dev @prisma/client,@quixo3/prisma-session-store,bcryptjs,body-parser,cors,dotenv,
 ejs,express,express-session,express-validator,jsonwebtoken,passport,passport-jwt,passport-local,pg,
