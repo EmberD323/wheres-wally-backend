@@ -19,3 +19,9 @@ model Coords {
   character   String   @unique
 }
 
+model Scores {
+  id          Int      @id @default(autoincrement())
+  name        String    
+  seconds     Int   
+}
+

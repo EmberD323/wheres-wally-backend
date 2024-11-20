@@ -7,15 +7,15 @@ async function main() {
   })
   const coord1 = await prisma.coords.create({
     data: {
-      x:  47.2845,
-      y: 33.6794,
+      x:  49.5559,
+      y: 36.5242,
       character: 'Wally'
     },
   })
   const coord2 = await prisma.coords.create({
     data: {
-      x: 69.86,
-      y: 37.9008,
+      x: 71.03,
+      y: 40.0114,
       character: 'Wenda'
     }
   })

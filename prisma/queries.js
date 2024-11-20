@@ -7,7 +7,25 @@ async function findAllCharacters() {
     return all
 }
 
+async function createScore(name,time) {
+    await prisma.scores.create({
+        data: {
+            name,
+            seconds:time
+        }
+    })
+    const all =await prisma.scores.findMany()
+
+}
+
+async function findAllScores() {
+    const all =await prisma.scores.findMany()
+    return all
+}
+
 
 module.exports = {
     findAllCharacters,
+    createScore,
+    findAllScores
 }
