@@ -4,7 +4,6 @@ const prisma = new PrismaClient()
 
 async function findAllCharacters() {
     const all =await prisma.coords.findMany()
-    console.log(all)
     return all
 }
 async function findCharacter(x,y) {
