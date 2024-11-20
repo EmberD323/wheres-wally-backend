@@ -7,12 +7,6 @@ async function allCharactersGet (req, res) {
     res.json(coords);
     
 }
-async function characterCheck (req, res) {
-    const {x,y} = req.body
-    const character = await db.findCharacter(Number(x),Number(y));
-    res.json(character);
-
-}
 
 
 
