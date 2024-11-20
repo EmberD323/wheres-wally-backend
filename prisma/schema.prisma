@@ -14,8 +14,8 @@ datasource db {
 }
 model Coords {
   id          Int      @id @default(autoincrement())
-  x           Decimal
-  y           Decimal
+  x           String
+  y           String
   character   String   @unique
 }
 
