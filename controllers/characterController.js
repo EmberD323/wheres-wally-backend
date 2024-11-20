@@ -6,9 +6,6 @@ const validateScore= [
         .escape()
         .isAlphanumeric().withMessage(`Name must only contain letters or numbers`)
         .isLength({ min: 1, max: 20 }).withMessage(`Name must be between 1 and 20 characters.`),
-    body("time").trim()
-        .escape()
-        .isNumeric().withMessage(`Time must be a number`),
 ];
 async function allCharactersGet (req, res) {
     const coords = await db.findAllCharacters();
