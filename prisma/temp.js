@@ -3,12 +3,12 @@ const { PrismaClient,Prisma } = require('@prisma/client')
 const prisma = new PrismaClient()
 
 async function main() {
-  // const deleteAll = await prisma.coords.deleteMany({
-  // })
+  const deleteAll = await prisma.coords.deleteMany({
+  })
   const coord1 = await prisma.coords.create({
     data: {
-      x:  47.2845,
-      y: 33.6794,
+      x:  new Prisma.Decimal(47.2845),
+      y: new Prisma.Decimal(33.6794),
       character: 'Wally'
     },
   })
