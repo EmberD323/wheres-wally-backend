@@ -14,8 +14,8 @@ datasource db {
 }
 model Coords {
   id          Int      @id @default(autoincrement())
-  x           String
-  y           String
+  x           Float    @db.DoublePrecision
+  y           Float    @db.DoublePrecision 
   character   String   @unique
 }
 
