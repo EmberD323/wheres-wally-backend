@@ -1,6 +1,6 @@
-# blog-api-backend
+# Wheres Wally - Backend
 
-This the backend API for a wheres waldo project (A photo tagging app)
+This is the backend API for a Wheres Wally project (A photo tagging app)
 
 # Deployed
 - https://wheres-wally-d323.netlify.app/
