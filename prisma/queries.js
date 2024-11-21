@@ -19,7 +19,13 @@ async function createScore(name,time) {
 }
 
 async function findAllScores() {
-    const all =await prisma.scores.findMany()
+    const all =await prisma.scores.findMany({
+        orderBy: [
+          {
+            seconds:'desc',
+          },
+        ],
+      })
     return all
 }
 
