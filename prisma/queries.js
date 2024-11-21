@@ -22,7 +22,7 @@ async function findAllScores() {
     const all =await prisma.scores.findMany({
         orderBy: [
           {
-            seconds:'desc',
+            seconds:'asc',
           },
         ],
       })
